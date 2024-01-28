@@ -45,14 +45,16 @@ const App: Component = () => {
             <div class="hero-content text-center">
                 <div class="max-w-2xl">
                     <h1 class="text-5xl font-bold">Riot Cookie String Generator</h1>
-                    <p class="py-6">
+                    <p class="pt-6">
                         A simple webapp to extract cookies from <code>RiotPrivateSettings.yml</code> or Chromium devtools cookie inspector.
                         Just paste the contents into the box and get a string suitable for use in a <code>Cookie</code> header.
                     </p>
+                    <a href="https://github.com/techchrism/riot-cookiestring-gen" class="link block py-3">Source Code</a>
+
 
                     <textarea
                         class="w-full h-64 p-4 text-lg rounded-lg bg-gray-100 text-black dark:bg-gray-800 dark:text-white"
-                        placeholder="Paste your RiotPrivateSettings.yml or cookie string here"
+                        placeholder="Paste your RiotPrivateSettings.yml or Chromium devtools cookie table here"
                         onInput={parseResults}
                     ></textarea>
 
